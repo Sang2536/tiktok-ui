@@ -76,10 +76,11 @@ Information about the project
 
 ## Support tools
 
--   ReactJS Library: Main build tools
--   customize-cra Library: Customize Webpack configuration
--   Babel plugin module resolver Library: Custom module resolver plugin for Babel
--   Prettier Library: Format code
+-   ReactJS: Main library of the project
+-   React router dom: Standard library for routing in React
+-   customize-cra: Webpack configuration customization library
+-   Babel plugin module resolver: The library uses a custom Module Resolver Plugin for Babel
+-   Prettier: Library used to format code
 
 -   HTML, CSS, SASS
 -   JS
