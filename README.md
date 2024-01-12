@@ -80,3 +80,6 @@ Information about the project
 -   customize-cra Library: Customize Webpack configuration
 -   Babel plugin module resolver Library: Custom module resolver plugin for Babel
 -   Prettier Library: Format code
+
+-   HTML, CSS, SASS
+-   JS
