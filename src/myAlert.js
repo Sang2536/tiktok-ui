@@ -1,6 +1,5 @@
-
 const myAlert = () => {
-    alert('Say hello!')
-}
+    alert('Say hello!');
+};
 
-export default myAlert
+export default myAlert;

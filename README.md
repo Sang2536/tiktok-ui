@@ -78,4 +78,5 @@ Information about the project
 
 -   ReactJS Library: Main build tools
 -   customize-cra Library: Customize Webpack configuration
--   babel plugin module resolver Library: Custom module resolver plugin for Babel
+-   Babel plugin module resolver Library: Custom module resolver plugin for Babel
+-   Prettier Library: Format code
