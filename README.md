@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# TIKTOK_UI PROJECT
+
+Information about the project
+
+## Support tools
+
+-   ReactJS Library: Main build tools
+-   customize-cra Library: Customize Webpack configuration
+-   babel plugin module resolver Library: Custom module resolver plugin for Babel
