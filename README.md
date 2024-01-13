@@ -82,5 +82,5 @@ Information about the project
 -   Babel plugin module resolver: The library uses a custom Module Resolver Plugin for Babel
 -   Prettier: Library used to format code
 
--   HTML, CSS, SASS
--   JS
+-   HTML, CSS, SASS,JS
+-   Classnames: Library support CSS bind
