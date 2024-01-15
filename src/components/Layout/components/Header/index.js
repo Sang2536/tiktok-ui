@@ -6,6 +6,7 @@ import Tippy from '@tippyjs/react/headless';
 
 import { Wrapper as PropperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
+import Button from '~/components/Button';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 
@@ -53,7 +54,10 @@ function Header() {
                     </div>
                 </Tippy>
 
-                <div className={cx('actions')}>Actions</div>
+                <div className={cx('actions')}>
+                    <Button text>Upload</Button>
+                    <Button primary medium>Sign in</Button>
+                </div>
             </div>
         </header>
     );
