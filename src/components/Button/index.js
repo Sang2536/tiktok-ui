@@ -25,7 +25,7 @@ function Button({
 }) {
     let Comp = 'button';
     const props = {
-        onclick,
+        onClick,
         ...passProps,
     };
 
@@ -55,8 +55,6 @@ function Button({
         small,
         medium,
         large,
-        leftIcon,
-        rightIcon,
         [className]: className,
     });
 
