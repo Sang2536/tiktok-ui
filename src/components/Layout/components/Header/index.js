@@ -4,19 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCircleQuestion,
     faCircleXmark,
-    faCloudUpload,
     faCoins,
     faEarthAsia,
     faEllipsisVertical,
     faGear,
     faKeyboard,
     faMagnifyingGlass,
-    faMessage,
     faSignOut,
     faSpinner,
     faUser,
 } from '@fortawesome/free-solid-svg-icons';
-import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons';
 import Tippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
 
@@ -24,6 +21,8 @@ import { Wrapper as PropperWrapper } from '~/components/Popper';
 import Menu from '~/components/Popper/Menu';
 import AccountItem from '~/components/AccountItem';
 import Button from '~/components/Button';
+import Image from '~/components/Image';
+import { CloudUploadIcon, MessageIcon, TelegramPlaneIcon } from '~/components/Icons';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 
@@ -103,7 +102,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <img src={images.logo} alt="TikTok" />
+                <Image src={images.logo} alt="TikTok" />
 
                 <Tippy
                     interactive
@@ -138,15 +137,19 @@ function Header() {
                         <>
                             <Tippy delay={[0, 200]} content="Upload video" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faCloudUpload} />
+                                    <CloudUploadIcon /> Upload
                                 </button>
                             </Tippy>
-                            <button className={cx('action-btn')}>
-                                <FontAwesomeIcon icon={faTelegramPlane} />
-                            </button>
-                            <button className={cx('action-btn')}>
-                                <FontAwesomeIcon icon={faMessage} />
-                            </button>
+                            <Tippy delay={[0, 200]} content="Message" placement="bottom">
+                                <button className={cx('action-btn')}>
+                                    <TelegramPlaneIcon width='2.4rem' height='2.4rem' /> Message
+                                </button>
+                            </Tippy>
+                            <Tippy delay={[0, 200]} content="Mailbox" placement="bottom">
+                                <button className={cx('action-btn')}>
+                                    <MessageIcon /> Mailbox
+                                </button>
+                            </Tippy>
                         </>
                     ) : (
                         <>
@@ -159,10 +162,11 @@ function Header() {
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 className={cx('user-avatar')}
-                                src="https://cdn.sforum.vn/sforum/wp-content/uploads/2023/11/avatar-dep-89.jpg"
+                                src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/c1eee8a692b34023a2606a2ede714464~c5_300x300.webp?lk3s=a5d48078&x-expires=1705442400&x-signature=HVe0hjAI1U4UDsjsoDASqeayKIc%3D"
                                 alt="username"
+                                fallback="https://cdn.sforum.vn/sforum/wp-content/uploads/2023/11/avatar-dep-89.jpg"
                             />
                         ) : (
                             <button className={cx('more-btn')}>

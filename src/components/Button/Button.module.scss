@@ -1,11 +1,12 @@
 .wrapper {
     min-width: 100px;
     padding: 9px 16px;
+    border: 1px solid transparent;
     border-radius: 4px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
     background-color: var(--white);
-    border: 1px solid transparent;
     display: inline-flex;
     align-items: center;
     justify-content: center;
