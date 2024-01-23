@@ -137,17 +137,17 @@ function Header() {
                         <>
                             <Tippy delay={[0, 200]} content="Upload video" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <CloudUploadIcon /> Upload
+                                    <CloudUploadIcon />
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 200]} content="Message" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <TelegramPlaneIcon width='2.4rem' height='2.4rem' /> Message
+                                    <TelegramPlaneIcon width='2.4rem' height='2.4rem' />
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 200]} content="Mailbox" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <MessageIcon /> Mailbox
+                                    <MessageIcon />
                                 </button>
                             </Tippy>
                         </>
