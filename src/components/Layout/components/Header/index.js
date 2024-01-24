@@ -17,7 +17,7 @@ import {
 import Tippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
 
-import { Wrapper as PropperWrapper } from '~/components/Popper';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
 import Menu from '~/components/Popper/Menu';
 import AccountItem from '~/components/AccountItem';
 import Button from '~/components/Button';
@@ -109,14 +109,14 @@ function Header() {
                     visible={searchResult.length > 0}
                     render={(attrs) => (
                         <div className={cx('search-result')} tabIndex="-1" {...attrs}>
-                            <PropperWrapper>
+                            <PopperWrapper>
                                 <h4 className={cx('search-title')}>Account</h4>
                                 <AccountItem />
                                 <AccountItem />
                                 <AccountItem />
                                 <AccountItem />
                                 <AccountItem />
-                            </PropperWrapper>
+                            </PopperWrapper>
                         </div>
                     )}
                 >
@@ -154,9 +154,7 @@ function Header() {
                     ) : (
                         <>
                             <Button text>Upload</Button>
-                            <Button primary medium>
-                                Sign in
-                            </Button>
+                            <Button primary medium>Sign in</Button>
                         </>
                     )}
 

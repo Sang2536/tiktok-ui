@@ -1,0 +1,58 @@
+.wrapper {
+    width: 320px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.follow-btn {
+    padding: 6px 16px;
+}
+
+.body {
+    margin-top: 12px;
+}
+
+.username {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.circleCheck {
+    margin-left: 4px;
+    color: #20D5EC;
+    font-size: 1.6rem;
+}
+
+.name {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.4rem;
+}
+
+.analytics {
+    margin-top: 8px;
+    font-size: 1.6rem;
+}
+
+.value {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.label {
+    margin-left: 2px;
+    margin-right: 1.6rem;
+    color: rgba(22, 24, 35, 0.75);
+}

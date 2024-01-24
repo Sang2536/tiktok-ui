@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 
 import MenuSidebar, { MenuItemSidebar } from './Menu';
+import SuggestedAccounts from '~/components/SuggestedAccounts';
 import {
     CompassActveIcon,
     CompassIcon,
@@ -36,6 +37,9 @@ function Sideber() {
                 <MenuItemSidebar title="LIVE" to="/live" icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
                 <MenuItemSidebar title="Profile" to="/@username" icon={<UserIcon />} activeIcon={<UserActiveIcon />} />
             </MenuSidebar>
+
+            <SuggestedAccounts label="Suggested accounts" />
+            <SuggestedAccounts label="Following accounts" />
         </aside>
     );
 }

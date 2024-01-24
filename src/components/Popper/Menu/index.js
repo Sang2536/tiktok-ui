@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Tippy from '@tippyjs/react';
 import classNames from 'classnames/bind';
 
-import { Wrapper as PropperWrapper } from '~/components/Popper';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
 import Header from './Header';
 import MenuItem from './MenuItem';
 import styles from './Menu.module.scss';
@@ -43,7 +43,7 @@ function Menu({ children, items = [], onChange = defaultFn }) {
             offset={[12, 8]}
             render={(attrs) => (
                 <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
-                    <PropperWrapper className={cx('menu-popper')}>
+                    <PopperWrapper className={cx('menu-popper')}>
                         {history.length > 1 && (
                             <Header
                                 title="Language"
@@ -53,7 +53,7 @@ function Menu({ children, items = [], onChange = defaultFn }) {
                             />
                         )}
                         {renderItem()}
-                    </PropperWrapper>
+                    </PopperWrapper>
                 </div>
             )}
             onHide={() => setHistory((prev) => prev.slice(0, 1))}
