@@ -12,11 +12,14 @@ import LivePage from '~/pages/Live';
 const publicRoutes = [
     { path: '/', component: HomePage },
     { path: '/following', component: Following },
+    { path: '/@:nickname', component: ProfilePage },
     { path: '/upload', component: UploadPage, layout: HeaderOnly },
     { path: '/search', component: SearchPage, layout: null },
     { path: '/live', component: LivePage },
 ];
 
-const privateRoutes = [{ path: '/profile', component: ProfilePage }];
+const privateRoutes = [
+    // { path: '/@:nickname', component: ProfilePage }
+];
 
 export { publicRoutes, privateRoutes };
