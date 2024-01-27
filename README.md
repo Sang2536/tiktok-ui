@@ -11,7 +11,6 @@ Open [http://localhost:3000] to view it in your browser.
 
 Builds the app for production to the `build` folder.\
 
-
 # TIKTOK_UI PROJECT
 
 Information about the project
@@ -27,3 +26,4 @@ Information about the project
 -   HTML, CSS, SASS,JS
 -   Classnames: Library support CSS bind
 -   Tippy.js: Library support build tooltip, popover, dropdown and menu
+-   Axios: Library support call API
