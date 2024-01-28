@@ -1,5 +1,10 @@
 .wrapper {
     width: 356px;
+    height: 100vh;
     padding: 20px 0 26px 8px;
     margin-left: -18px;
+
+    &:hover {
+        overflow-y: auto;
+    }
 }

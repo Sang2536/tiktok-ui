@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -19,6 +20,7 @@ import Search from '~/components/Layout/components/Search';
 import Button from '~/components/Button';
 import Image from '~/components/Image';
 import { CloudUploadIcon, MessageIcon, TelegramPlaneIcon } from '~/components/Icons';
+import routesConfig from '~/config/routes';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 
@@ -32,10 +34,24 @@ const MENU_ITEMS = [
             title: 'Language',
             data: [
                 { type: 'language', code: 'en', title: 'English' },
-                { type: 'language', code: 'vi', title: 'Tiếng Việt ' },
+                { type: 'language', code: 'vi', title: 'Tiếng Việt' },
                 { type: 'language', code: 'jp', title: '日本語' },
-                { type: 'language', code: 'fr', title: 'française' },
+                { type: 'language', code: 'fr', title: 'Française' },
                 { type: 'language', code: 'ch', title: '中国人' },
+                { type: 'language', code: 'kr', title: '한국인' },
+                { type: 'language', code: 'ru', title: 'Русский' },
+                { type: 'language', code: 'th', title: 'แบบไทย' },
+                { type: 'language', code: 'es', title: 'Español' },
+                { type: 'language', code: 'tr', title: 'Türkçe' },
+                { type: 'language', code: 'se', title: 'Svenska' },
+                { type: 'language', code: 'sa', title: 'عربي' },
+                { type: 'language', code: 'rs', title: 'srbština' },
+                { type: 'language', code: 'pl', title: 'Polski' },
+                { type: 'language', code: 'pt', title: 'Português' },
+                { type: 'language', code: 'de', title: 'Deutsch' },
+                { type: 'language', code: 'nl', title: 'Nederlands' },
+                { type: 'language', code: 'dk', title: 'Dansk' },
+                { type: 'language', code: 'it', title: 'Italiana' },
             ],
         },
     },
@@ -80,7 +96,6 @@ function Header() {
     const handleMenuChange = (menuItem) => {
         switch (menuItem.type) {
             case 'language':
-                console.log(menuItem);
                 break;
             default:
                 throw new Error();
@@ -90,7 +105,9 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Image src={images.logo} alt="TikTok" />
+                <Link to={routesConfig.home} className={cx('logo-link')}>
+                    <Image src={images.logo} alt="TikTok" />
+                </Link>
 
                 <Search />
 
