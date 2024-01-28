@@ -16,11 +16,11 @@ import Tippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
 
 import Menu from '~/components/Popper/Menu';
-import Search from '~/components/Layout/components/Search';
+import Search from '~/layouts/components/Search';
 import Button from '~/components/Button';
 import Image from '~/components/Image';
 import { CloudUploadIcon, MessageIcon, TelegramPlaneIcon } from '~/components/Icons';
-import routesConfig from '~/config/routes';
+import configs from '~/configs';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 
@@ -70,7 +70,7 @@ const userMenu = [
     {
         icon: <FontAwesomeIcon icon={faUser} />,
         title: 'View profile',
-        to: '/@username'
+        to: '/@username',
     },
     {
         icon: <FontAwesomeIcon icon={faCoins} />,
@@ -105,7 +105,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Link to={routesConfig.home} className={cx('logo-link')}>
+                <Link to={configs.routes.home} className={cx('logo-link')}>
                     <Image src={images.logo} alt="TikTok" />
                 </Link>
 
@@ -121,7 +121,7 @@ function Header() {
                             </Tippy>
                             <Tippy delay={[0, 200]} content="Message" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <TelegramPlaneIcon width='2.4rem' height='2.4rem' />
+                                    <TelegramPlaneIcon width="2.4rem" height="2.4rem" />
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 200]} content="Mailbox" placement="bottom">
@@ -133,7 +133,9 @@ function Header() {
                     ) : (
                         <>
                             <Button text>Upload</Button>
-                            <Button primary medium>Sign in</Button>
+                            <Button primary medium>
+                                Sign in
+                            </Button>
                         </>
                     )}
 

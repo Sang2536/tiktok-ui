@@ -14,7 +14,7 @@ import {
     UserGroupIcon,
     UserIcon,
 } from '~/components/Icons';
-import routesConfig from '~/config/routes';
+import configs from '~/configs';
 import styles from './Sidebar.module.scss';
 
 const cx = classNames.bind(styles);
@@ -25,31 +25,31 @@ function Sideber() {
             <MenuSidebar>
                 <MenuItemSidebar
                     title="For you"
-                    to={routesConfig.home}
+                    to={configs.routes.home}
                     icon={<HomeIcon />}
                     activeIcon={<HomeActiveIcon />}
                 />
                 <MenuItemSidebar
                     title="Following"
-                    to={routesConfig.following}
+                    to={configs.routes.following}
                     icon={<UserGroupIcon />}
                     activeIcon={<UserGroupActiveIcon />}
                 />
                 <MenuItemSidebar
                     title="Explore"
-                    to={routesConfig.explore}
+                    to={configs.routes.explore}
                     icon={<CompassIcon />}
                     activeIcon={<CompassActveIcon />}
                 />
                 <MenuItemSidebar
                     title="LIVE"
-                    to={routesConfig.live}
+                    to={configs.routes.live}
                     icon={<LiveIcon />}
                     activeIcon={<LiveActiveIcon />}
                 />
                 <MenuItemSidebar
                     title="Profile"
-                    to={routesConfig.profile}
+                    to={configs.routes.profile}
                     icon={<UserIcon />}
                     activeIcon={<UserActiveIcon />}
                 />

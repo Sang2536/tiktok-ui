@@ -1,8 +1,8 @@
-import * as requestCustom from '~/utils/request';
+import * as httpRequest from '~/utils/httpRequest';
 
 export const search = async (q, type = 'less') => {
     try {
-        const res = await requestCustom.getCustom('users/search', {
+        const res = await httpRequest.getCustom('users/search', {
             params: {
                 q,
                 type,
