@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import MenuSidebar, { MenuItemSidebar } from './Menu';
 import SuggestedAccounts from '~/components/SuggestedAccounts';
 import {
-    CompassActveIcon,
+    CompassActiveIcon,
     CompassIcon,
     HomeActiveIcon,
     HomeIcon,
@@ -19,7 +19,7 @@ import styles from './Sidebar.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Sideber() {
+function Sidebar() {
     return (
         <aside className={cx('wrapper')}>
             <MenuSidebar>
@@ -39,7 +39,7 @@ function Sideber() {
                     title="Explore"
                     to={configs.routes.explore}
                     icon={<CompassIcon />}
-                    activeIcon={<CompassActveIcon />}
+                    activeIcon={<CompassActiveIcon />}
                 />
                 <MenuItemSidebar
                     title="LIVE"
@@ -61,4 +61,4 @@ function Sideber() {
     );
 }
 
-export default Sideber;
+export default Sidebar;

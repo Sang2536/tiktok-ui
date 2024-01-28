@@ -240,7 +240,7 @@ export const CompassIcon = ({ width = '3.2rem', height = '3.2rem', className = '
     );
 };
 
-export const CompassActveIcon = ({ width = '3.2rem', height = '3.2rem', className = '' }) => {
+export const CompassActiveIcon = ({ width = '3.2rem', height = '3.2rem', className = '' }) => {
     return (
         <svg
             fill="rgba(254, 44, 85, 1)"

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames/bind';
 
@@ -13,6 +14,13 @@ function MenuItemSidebar({ title, to, icon, activeIcon }) {
             <span className={cx('menu-item-title')}>{title}</span>
         </NavLink>
     );
+}
+
+MenuItemSidebar.propTypes = {
+    title: PropTypes.string.isRequired,
+    to: PropTypes.string,
+    icon: PropTypes.node,
+    activeIcon: PropTypes.node,
 }
 
 export default MenuItemSidebar;
