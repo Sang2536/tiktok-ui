@@ -5,7 +5,7 @@
 }
 
 .search {
-    height: var(--seach-height);
+    height: var(--search-height);
     padding-left: 16px;
     position: relative;
     display: flex;
@@ -15,6 +15,7 @@
 
     input {
         flex: 1;
+        padding-right: 40px;
         height: 100%;
         color: var(--black);
         font-size: 1.6rem;
@@ -32,7 +33,7 @@
         top: var(--search-top-spacer);
         right: var(--search-button-width);
         width: 1px;
-        height: calc(var(--seach-height) - Var(--search-top-spacer) * 2);
+        height: calc(var(--search-height) - Var(--search-top-spacer) * 2);
         background-color: rgba(22, 24, 35, 0.12);
     }
 

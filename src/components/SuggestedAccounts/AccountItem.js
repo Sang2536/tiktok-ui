@@ -6,6 +6,7 @@ import Tippy from '@tippyjs/react/headless';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountPreview from './AccountPreview';
 import Image from '~/components/Image';
+import images from '~/assets/images';
 import styles from './SuggestedAccounts.module.scss';
 
 const cx = classNames.bind(styles);
@@ -27,8 +28,9 @@ function AccountItem() {
                 <div className={cx('account-item')}>
                     <Image
                         className={cx('user-avatar')}
-                        src="https://cdn.sforum.vn/sforum/wp-content/uploads/2023/11/avatar-dep-89.jpg"
+                        src=""
                         alt="username"
+                        fallback={images.noAvatar}
                     />
                     <div className={cx('item-info')}>
                         <p className={cx('username')}>

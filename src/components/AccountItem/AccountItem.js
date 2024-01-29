@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 import Image from '~/components/Image';
+import images from '~/assets/images';
 import styles from './AccountItem.module.scss';
 
 const cx = classNames.bind(styles);
@@ -16,7 +17,7 @@ function AccountItem({ data }) {
                 className={cx('avatar')}
                 src={data.avatar}
                 alt={data.full_name}
-                fallback="https://cdn.sforum.vn/sforum/wp-content/uploads/2023/11/avatar-dep-89.jpg"
+                fallback={images.noAvatar}
             ></Image>
             <div className={cx('info')}>
                 <h4 className={cx('name')}>

@@ -4,6 +4,7 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 import Image from '~/components/Image';
 import Button from '~/components/Button';
+import images from '~/assets/images';
 import styles from './AccountPreview.module.scss';
 
 const cx = classNames.bind(styles);
@@ -14,8 +15,9 @@ function AccountPreview() {
             <div className={cx('header')}>
                 <Image
                     className={cx('user-avatar')}
-                    src="https://cdn.sforum.vn/sforum/wp-content/uploads/2023/11/avatar-dep-89.jpg"
+                    src=""
                     alt="username"
+                    fallback={images.noAvatar}
                 />
                 <Button primary medium className={cx('follow-btn')}>Follow</Button>
             </div>

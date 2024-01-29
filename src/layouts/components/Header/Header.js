@@ -9,6 +9,7 @@ import {
     faEllipsisVertical,
     faGear,
     faKeyboard,
+    faPlus,
     faSignOut,
     faUser,
 } from '@fortawesome/free-solid-svg-icons';
@@ -112,13 +113,11 @@ function Header() {
                 <Search />
 
                 <div className={cx('actions')}>
+                    <Button outline>
+                        <FontAwesomeIcon icon={faPlus} /> Upload
+                    </Button>
                     {currentUser ? (
                         <>
-                            <Tippy delay={[0, 200]} content="Upload video" placement="bottom">
-                                <button className={cx('action-btn')}>
-                                    <CloudUploadIcon />
-                                </button>
-                            </Tippy>
                             <Tippy delay={[0, 200]} content="Message" placement="bottom">
                                 <button className={cx('action-btn')}>
                                     <TelegramPlaneIcon width="2.4rem" height="2.4rem" />
@@ -132,7 +131,6 @@ function Header() {
                         </>
                     ) : (
                         <>
-                            <Button text>Upload</Button>
                             <Button primary medium>
                                 Sign in
                             </Button>
@@ -141,12 +139,7 @@ function Header() {
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <Image
-                                className={cx('user-avatar')}
-                                src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/c1eee8a692b34023a2606a2ede714464~c5_300x300.webp?lk3s=a5d48078&x-expires=1705442400&x-signature=HVe0hjAI1U4UDsjsoDASqeayKIc%3D"
-                                alt="username"
-                                fallback="https://cdn.sforum.vn/sforum/wp-content/uploads/2023/11/avatar-dep-89.jpg"
-                            />
+                            <Image className={cx('user-avatar')} src="" alt="username" fallback={images.noAvatar} />
                         ) : (
                             <button className={cx('more-btn')}>
                                 <FontAwesomeIcon icon={faEllipsisVertical} />
