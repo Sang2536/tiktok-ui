@@ -59,8 +59,6 @@ function Button({
         [className]: className,
     });
 
-    console.log(classes);
-
     return (
         <Comp className={classes} {...props}>
             {leftIcon && <span className={cx('btn-icon')}>{leftIcon}</span>}
@@ -75,7 +73,6 @@ Button.propTypes = {
     href: PropTypes.string,
     primary: PropTypes.bool,
     outline: PropTypes.bool,
-    outlinePrimary: PropTypes.bool,
     text: PropTypes.bool,
     disabled: PropTypes.bool,
     rounded: PropTypes.bool,

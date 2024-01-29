@@ -20,7 +20,7 @@ import Menu from '~/components/Popper/Menu';
 import Search from '~/layouts/components/Search';
 import Button from '~/components/Button';
 import Image from '~/components/Image';
-import { CloudUploadIcon, MessageIcon, TelegramPlaneIcon } from '~/components/Icons';
+import { MessageIcon, TelegramPlaneIcon } from '~/components/Icons';
 import configs from '~/configs';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
@@ -71,7 +71,7 @@ const userMenu = [
     {
         icon: <FontAwesomeIcon icon={faUser} />,
         title: 'View profile',
-        to: '/@username',
+        to: '/@ngamsaobanngay',
     },
     {
         icon: <FontAwesomeIcon icon={faCoins} />,
